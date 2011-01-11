@@ -5,7 +5,7 @@ class Tx_f2jcarouselvh_ViewHelpers_JcarouselViewHelper extends Tx_Fluid_Core_Vie
 	 * Displays HTML items in a JCarousel
 	 *
 	 * @param Array $htmlItems
-	 * @param string $cssFile (optional)
+	 * @param string $cssFile
 	 * @param string $jsonJCarouselConfig
 	 * @param string $preJsCode
 	 * @param string $postJsCode
