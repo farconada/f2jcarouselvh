@@ -4,8 +4,8 @@ class Tx_f2jcarouselvh_ViewHelpers_JcarouselViewHelper extends Tx_Fluid_Core_Vie
 	/**
 	 * Displays HTML items in a JCarousel
 	 *
-	 * @param array $htmlItems
-	 * @param string $cssFile
+	 * @param Array $htmlItems
+	 * @param string $cssFile (optional)
 	 * @param string $jsonJCarouselConfig
 	 * @param string $preJsCode
 	 * @param string $postJsCode
@@ -14,8 +14,9 @@ class Tx_f2jcarouselvh_ViewHelpers_JcarouselViewHelper extends Tx_Fluid_Core_Vie
 	 * @param integer $containerHeight
 	 * @param integer $containerWidth
 	 * @return string
+	 * @api
 	 */
-	public function render($htmlItems = NULL, $cssFile = NULL, $jsonJCarouselConfig = NULL, $preJsCode = NULL, $postJsCode, $itemHeight = 75, $itemWidth = 75, $containerWidth = 300, $containerHeight = 100) {
+	public function render($htmlItems , $cssFile = '' , $jsonJCarouselConfig = '', $preJsCode = '', $postJsCode = '', $itemHeight = 75, $itemWidth = 75, $containerWidth = 300, $containerHeight = 100) {
 		$this->addHeaderFiles($cssFile);
 		if (!$cssFile) {
 			$this->addHeaderStyle($itemHeight, $itemWidth, $containerWidth, $containerHeight);

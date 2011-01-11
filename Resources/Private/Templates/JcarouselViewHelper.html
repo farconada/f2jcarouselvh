@@ -2,7 +2,7 @@
 <div>
 	<ul id="f2jcarouselvh-{pluginId}" class="jcarousel-skin-tango">
 		<f:for each="{htmlItems}" as="item">
-			<li><f:format.html>{item}</f:format.html></li>
+			<li><f:format.printf arguments="{1:'{item}'}">%s</f:format.printf></li>
 		</f:for>
 	</ul>
 </div>
